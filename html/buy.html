@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/commodity.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/car.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+
+</head>
+
+<body bgcolor="#F0F0F0">
+    <!-- 包整個網頁的 -->
+    <div class="base">
+        <!-- 最上面那一塊 -->
+        <div>
+            <table style="width: 100%;">
+                <tr>
+                    <td><a href="../index.html"><img src="../logo.png" height="100px" width="100px"></a></td>
+                    <td></td>
+                    <td align="right" style="padding-top: 4.5%;">
+                        <ul class="drop-down-menu">
+                            <li><a href="#">商品分類</a>
+                                <ul>
+                                    <li><a href="laundry/laundry.html">洗衣</a></li>
+                                    <li><a href="electrical/electrical.html">電器</a></li>
+                                    <li><a href="clean/clean.html">清潔</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="#">關於我們</a>
+                                <ul>
+                                    <li><a href="people.html">組員</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="car.html">購物車</a></li>
+                            <li><a href="login.html">登入/註冊</a>
+                                <ul>
+                                    <li><a href="user.html">使用者介面</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 上面的分隔線 -->
+        <div class="link-top"></div>
+        <div>
+            <div>
+                <div class="loginbase">
+                    <div class="logintext">
+                        請輸入取件者姓名:<br><input type="text" class="loginbox"><br><br>
+                        請輸宅配地址:<br><input type="password" class="loginbox"><br><br>
+                        請輸入取件者手機號碼::<br><input type="password" class="loginbox"><br><br>
+                        <div>
+                            <tr>
+                                <td>請選擇付款方式:</td>
+                                <td><input type="radio" name="gender" checked />VISA
+                                    <input type="radio" name="gender" />轉帳
+                                    <input type="radio" name="gender" />貨到付款
+                                </td>
+                            </tr>
+                        </div>
+                        總金額:
+                    </div>
+
+                    <div class="btn"><button class="loginbtn" onclick="location.href='../index.html'">
+                        確認送出
+                    </button></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

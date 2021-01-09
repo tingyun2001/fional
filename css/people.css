@@ -1,0 +1,32 @@
+.peoplebase {
+  width: 850px;
+  margin: 40px auto 60px auto;
+}
+
+.line {
+  height: 50px;
+  margin: 20px 0px;
+}
+
+.linel {
+  border: 1px solid silver;
+  background-color: silver;
+  width: 45%;
+  float: left;
+  margin-top: 20px;
+}
+
+.linet {
+  font-size: 30px;
+  color: silver;
+  float: left;
+  text-align: center;
+  width: 9.5%;
+}
+
+.peopic {
+  width: 300px;
+  height: 400px;
+  margin: 10px 30px;
+  border-radius: 15px;
+}

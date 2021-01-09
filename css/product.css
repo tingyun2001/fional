@@ -1,0 +1,187 @@
+.at {
+  /*包商品照片+字*/
+  position: relative;
+  display: block;
+  padding: 20px;
+  float: left;
+}
+
+.photo {
+  /*商品照片*/
+  position: relative;
+  width: auto;
+  float: left;
+}
+
+.im {
+  /*商品價格庫存數量*/
+  position: relative;
+  width: 600px;
+  height: 400px;
+  font-size: 36px;
+  float: left;
+  padding-left: 30px;
+  line-height: 60px;
+}
+
+.sel {
+  /*商品數量*/
+  font-size: 20px;
+  width: 100px;
+  margin-left: 5px;
+  vertical-align: 5px;
+}
+
+.car {
+  /*加入購物車按鈕*/
+  font-size: 25px;
+  width: 80%;
+  text-align: center;
+  border-radius: 7px;
+  border: 7px solid gray;
+  background-color: gray;
+  color: white;
+  bottom: -80px;
+  position: relative;
+}
+
+.product {
+  /*商品介紹*/
+  position: relative;
+  float: left;
+  width: 1160px;
+  height: 200px;
+  margin: 20px;
+  background-color: #e0e0e0;
+}
+
+
+
+
+.rating {
+  display: inline-block;
+  width: max-content;
+}
+.rating2 {
+  float: left;
+  width: auto;
+  margin-right: 85%;
+}
+
+.rating span {
+  float: right;
+  position: relative;
+}
+.rating2 span {
+  float: right;
+  position: relative;
+}
+
+.rating span input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.rating2 span input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.rating span label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: #FFF;
+  background: #ccc;
+  font-size: 30px;
+  margin-right: 2px;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.rating2 span label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: #FFF;
+  background: rgb(243, 118, 80);
+  font-size: 30px;
+  margin-right: 2px;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.rating span:hover~span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked~span label {
+  background: rgb(243, 118, 80);
+  color: #FFF;
+
+}
+
+.ps {
+  /*評價的頭貼*/
+  width: 80px;
+  height: 80px;
+  float: left;
+  position: relative;
+  padding: 20px 0px 0px 20px;
+}
+
+.eva {
+  /*評價*/
+  position: relative;
+  float: left;
+  clear: left;
+  background-color: white;
+  margin: 20px;
+  width: 1160px;
+}
+
+.evab {
+  /*包固定留言的圓圓+留言*/
+  padding: 20px;
+  margin-left: 100px;
+}
+.evaa{
+  /* 包可寫留言的圓圓+留言 */
+  padding: 20px;
+}
+
+.comment{
+  font-size: 20px;
+  border: 0px;
+  width: 100%;
+}
+.comment2 {
+  /*評價的留言*/
+  font-size: 20px;
+}
+
+hr{
+  /* 分隔線 */
+  height: 1px;
+  background-color: silver;
+  border: 0px;
+}
+
+.comsub{
+  /* 留言送出按鈕 */
+  font-size: 14px;
+  float: right;
+  padding: 8px 16px;
+  margin: 20px 0px;
+  background-color: gray;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue購物車</title>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/commodity.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/car.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
+
+</head>
+
+<body bgcolor="#F0F0F0">
+    <div class="base">
+        <!-- 最上面那一塊 -->
+        <div>
+            <table style="width: 100%;">
+                <tr>
+                    <td><a href="../index.html"><img src="../logo.png" height="100px" width="100px"></a></td>
+                    <td></td>
+                    <td align="right" style="padding-top: 4.5%;">
+                        <ul class="drop-down-menu">
+                            <li><a href="#">商品分類</a>
+                                <ul>
+                                    <li><a href="laundry/laundry.html">洗衣</a></li>
+                                    <li><a href="electrical/electrical.html">電器</a></li>
+                                    <li><a href="clean/clean.html">清潔</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="#">關於我們</a>
+                                <ul>
+                                    <li><a href="people.html">組員</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="car.html">購物車</a></li>
+                            <li><a href="login.html">登入/註冊</a>
+                                <ul>
+                                    <li><a href="user.html">使用者介面</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 上面的分隔線 -->
+        <div class="link-top"></div>
+        <div id="app">
+            <div class="container">
+                <div class="item_header">
+                    <div class="item_detail">商品</div>
+                    <div class="price">單價</div>
+                    <div class="count">數量</div>
+                    <div class="amount">總計</div>
+                    <div class="operate">操作</div>
+                </div>
+                <div class="item_container" v-for="(item, index) in itemList" :key="item.id">
+                    <div class="item_header item_body">
+                        <div class="item_detail">
+                            <img v-bind:src="item.imgUrl" alt="">
+                            <div class="name">{{item.itemName}}</div>
+                        </div>
+
+                        <div class="price"><span>$</span>{{item.price}}</div>
+                        <div class="count">
+                            <button @click="handleSub(item)">-</button>
+                            {{item.count}}
+                            <button @click="handlePlus(item)">+</button>
+                        </div>
+                        <div class="amount">{{item.price * item.count}}</div>
+                        <div class="operate">
+                            <button @click="handledelete(index)">刪除</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="btn"><button class="loginbtn" onclick="location.href='buy.html'">
+            前往結帳!
+        </button>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

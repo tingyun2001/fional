@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cb {
+    padding: 5px 20px 5px 20px;
+    margin-left: 20px;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 7px;
+    color: #666666;
+}
+
+.ca {
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.tdpic {
+    width: 150px;
+}
+
+.tdname {
+    width: 200px;
+}
+
+
+
+
+
+
+.item_header{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 200px;
+    color: #888;
+    line-height: 30px;
+}
+.item_header .item_detail{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;    
+}
+.item_detail img{
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    float: left;
+}
+.item_detail .name{
+    margin-left: 100px;
+    margin-top: 20px;
+} 
+
+.tdprice {
+    width: 200px;
+}
+
+.tdnum {
+    width: 300px;
+}
+
+.tddel {
+    width: 70px;
+    height: 30px;
+}
+
+hr {
+    height: 2px;
+}
+
+.ccar {
+    /*加入購物車按鈕*/
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+    border: 7px solid gray;
+    background-color: gray;
+    color: white;
+    bottom: -80px;
+    position: relative;
+}
+
+.carpic {
+    height: 120px;
+    width: 110px;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+/*加減選單*/
+* {
+    box-sizing: border-box;
+}
+
+#input {
+    width: 80px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+}
+
+#input,
+#increment,
+#decrement {
+    float: left;
+    border: 1px solid #cccccc;
+    height: 40px;
+    user-select: none;
+}
+
+#decrement,
+#increment {
+    display: inline-block;
+    width: 30px;
+    line-height: 38px;
+    background: #f1f1f1;
+    color: #444444;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#decrement:active,
+#increment:active {
+    background-color: #dddddd;
+}
+
+#decrement {
+    border-right: none;
+    border-radius: 0px 0 0 0px;
+}
+
+#increment {
+    border-left: none;
+    border-radius: 0 0px 0px 0;
+}
+.cc {
+    padding: 5px 20px 5px 20px;
+    margin-left: 350px;
+    font-size: 56px;
+    
+    border-radius: 7px;
+    color: #666666;
+}
